@@ -1,0 +1,60 @@
+import React from "react";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import SubSkills from "./SubSkills";
+
+const ProjectCard = (project) => {
+  let skills = [];
+  if (project.project.name === "SecureShop") {
+    skills = [
+      "ReactJS",
+      "NodeJS",
+      "MongoDB",
+      "ExpressJS",
+      "Web3JS",
+      "TailwindCSS",
+      "Solidity",
+      "MetaMask",
+    ];
+  } else if (project.project.name === "svg") {
+    skills = ["HTML", "CSS", "Javascript", "PHP", "XAMPP", "MySQL"];
+  }
+  return (
+    <div className="bg-gray-100 lg:w-[48%] md:w-[48%] sm:w-[98%] m-2 rounded-lg p-2">
+      <div className="flex justify-between">
+        <span className="font-bold text-[20px] text-left p-3 ">
+          {project.project.name}
+        </span>
+        <span className="mr-2 mt-2">
+          {project.project.github ? (
+            <a
+              href={`https://github.com/${project.project.github} `}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <GitHubIcon style={{ fontSize: "20px", color: "black" }} />
+            </a>
+          ) : (
+            <a
+              href={`https://github.com/${project.project.author}/${project.project.name} `}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <GitHubIcon style={{ fontSize: "20px", color: "black" }} />
+            </a>
+          )}
+        </span>
+      </div>
+      <div>
+        <p className="font-medium text-[15px] text-left leading-5 p-2">
+          {project.project.description}
+        </p>
+      </div>
+
+      {skills.map((skill) => (
+        <SubSkills skill={skill} />
+      ))}
+    </div>
+  );
+};
+
+export default ProjectCard;

@@ -38,7 +38,7 @@ const Skills = () => {
   }
   return (
     <>
-      <div className="mx-auto mt-[65px] 2xl:w-[70%] lg:w-[80%] md:w-[95%] sm:w-[98%] mt-4 border-none rounded-lg flex justify-between flex-col items-left text-grey text-2xl font-bold hover:shadow-2xl p-3">
+      <div className="mx-auto mt-[65px] 2xl:w-[70%] lg:w-[80%] md:w-[95%] sm:w-[98%] mt-4 border-none rounded-lg flex justify-between flex-col items-left text-grey text-2xl font-bold shadow-sm hover:shadow-2xl p-3 cursor-pointer">
         <h1 className="ml-[2%] md:text-left sm:text-center">
           Skill & Technologies
         </h1>
