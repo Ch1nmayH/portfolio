@@ -5,10 +5,10 @@ import profileImage from "../Assets/profile.jpg";
 const Profile = () => {
   return (
     <>
-      <div className="md:ml-[18%] md:mr-[18%] sm:ml-[5%] sm:mr-[5%] mt-10 max-w-[60%] bg-grey-500 mt-4 border-none border-t-2 border-black rounded-lg flex justify-between flex-col items-center text-grey text-2xl font-bold font-mono shadow-2xl">
+      <div className="mx-auto mt-10 2xl:w-[70%] lg:w-[80%] md:w-[95%] sm:w-[98%] bg-gray-100 mt-4 border-none rounded-lg flex justify-between flex-col items-center text-grey text-2xl font-bold font-mono shadow-inner hover:shadow-2xl p-3">
         <div className="flex justify-between items-center w-full mt-5">
-          <h3 className="ml-20">Chinmay Hegde</h3>
-          <div className="flex justify-between items-center mr-20">
+          <p className="ml-[2%] font-Mynerve">Chinmay Hegde</p>
+          <div className="flex justify-between items-center mr-[2%]">
             <a
               href="https://www.linkedin.com/in/chinmay-hegde-b89b27211/"
               target="_blank"
@@ -74,16 +74,16 @@ const Profile = () => {
             </a>
           </div>
         </div>
-        <div className="flex justify-between items-center w-full mt-5 ml-[100px] mb-8">
+        <div className="flex md:flex-row justify-between items-center w-full mt-5 ml-[2%] mt-[9%] mb-[3%] sm:flex-col sm:items-center sm:mt-5">
       <img
         src={profileImage}
         alt="profile"
-        className="rounded-full h-96 w-96 md:max-w-[200px] md:max-h-[200px] s:max-w-[50px] s:max-h-[50px] shadow-2xl border-4 border-white"
+        className="rounded-full h-96 w-96 md:max-w-[200px] md:max-h-[200px] sm:max-w-[150px] sm:max-h-[150px] sm:mt-[60px] shadow-2xl border-4 border-white"
       ></img>
       <div>
-        <p className="ml-10 mb-3">Full Stack Developer</p>
+        <p className="ml-10 mb-3 font-Lexend md:text-left sm:text-center sm:mt-[30px]">Full Stack Developer</p>
 
-        <p className="text-grey-100 text-base font-light ml-10 word-wrap mr-[100px]">
+        <p className="text-grey-100 text-base font-light ml-10 text-left md:text-center lg:word-wrap md:mr-[100px] sm:mr-[10px] font-Lexend-medium">
           Dedicated and proactive MCA Graduate with hands-on experience in MERN
           Stack development, PHP, and blockchain technology. Demonstrates
           expertise in building secure and scalable web applications, including
@@ -95,6 +95,7 @@ const Profile = () => {
         </p>
       </div>
     </div>
+    <hr className=""/>
       </div>
     </>
   );
