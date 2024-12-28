@@ -38,12 +38,12 @@ const Skills = () => {
   }
   return (
     <>
-      <div className="mx-auto mt-[65px] 2xl:w-[70%] lg:w-[80%] md:w-[95%] sm:w-[98%] mt-4 border-none rounded-lg flex justify-between flex-col items-left text-grey text-2xl font-bold shadow-sm hover:shadow-2xl p-3 cursor-pointer">
-        <h1 className="ml-[2%] text-center md:text-left">
+      <div className="mx-auto mt-[65px] 2xl:w-[60%] lg:w-[70%] md:w-[95%] sm:w-[98%] border-none rounded-lg flex justify-between flex-col items-left text-grey text-2xl font-bold shadow-sm hover:shadow-2xl p-3 cursor-pointer">
+        <h1 className="ml-[2%] text-center md:text-left font-Mynerve">
           Skill & Technologies
         </h1>
 
-        <div className="flex flex-wrap mt-[30px] ml-[2%] mt-4">
+        <div className="flex flex-wrap mt-[30px] ml-[2%] mt-4 mb-4">
           {skills.skills.map((skill) => (
             <SkillCard skill={skill}  />
           ))}

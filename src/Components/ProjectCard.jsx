@@ -19,7 +19,7 @@ const ProjectCard = (project) => {
     skills = ["HTML", "CSS", "Javascript", "PHP", "XAMPP", "MySQL"];
   }
   return (
-    <div className="bg-white w-[98%] lg:w-[47%] md:w-[45%] m-2 rounded-lg p-2">
+    <div className="bg-white w-[98%] lg:w-[47%] md:w-[45%] m-2 rounded-lg p-2 shadow-sm">
       <div className="flex justify-between">
         <span className="font-bold text-[20px] text-left p-3 ">
           {project.project.name}
