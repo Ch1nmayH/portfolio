@@ -6,8 +6,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Gluten:wght@335&family=Lexend:wght@100..900&family=Mansalva&family=Mynerve&family=Pacifico&display=swap');
 
 body {
-    height: 100vh; /* Full viewport height */
-    margin: 0; /* Remove default margin */
-    background: linear-gradient(to right, #ccfffa, #cadcff); /* Soft teal to light gray */
+    background: linear-gradient(360deg, #f5f5f5, #c9daff);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   
