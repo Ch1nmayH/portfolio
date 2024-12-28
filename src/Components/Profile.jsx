@@ -8,7 +8,7 @@ const Profile = () => {
         <div className="flex justify-between items-center w-full mt-5">
           <p className="ml-[2%] font-Mynerve">Chinmay Hegde</p>
           <div className="flex justify-between items-center mr-[2%]">
-            <a
+            {/* <a
               href="https://www.linkedin.com/in/chinmay-hegde-b89b27211/"
               target="_blank"
               rel="noopener noreferrer"
@@ -29,7 +29,7 @@ const Profile = () => {
                 <rect width="4" height="12" x="2" y="9"></rect>
                 <circle cx="4" cy="4" r="2"></circle>
               </svg>
-            </a>
+            </a> */}
             <a
               href="https://www.github.com/Ch1nmayH/"
               target="_blank"
@@ -51,7 +51,7 @@ const Profile = () => {
               </svg>
             </a>
             <a
-              href="chinmayhegde4408@gmail.com"
+              href="https://mail.google.com/mail/u/0/?fs=1&to=chinmayhegde4408@gmail.com&tf=cm"
               target="_blank"
               rel="noopener noreferrer"
               className="m-1 hover:text-red-500 transition duration-250 ease-in-out"
@@ -83,7 +83,7 @@ const Profile = () => {
             <p className="ml-2 md:ml-10 mb-3 font-Lexend md:text-left text-center mt-[30px] text-3xl text-gray-800">
               Full Stack Developer
             </p>
-            <div className="flex flex-col w-[90%] md:flex-row md:justify-between md:items-center md:w-[100%] lg:w-[80%] items-center justify-center">
+            <div className="flex flex-col w-[90%] md:flex-row md:justify-between md:items-center md:w-[100%] lg:w-[95%] items-center justify-center">
               <p className="text-gray-600 mr-[10px] text-[19px] lg:text-left md:text-left ml-10 text-center lg:word-wrap md:mr-[100px]">
                 MCA graduate with experience in MERN Stack, PHP, and blockchain
                 technology. Skilled in building secure web applications and

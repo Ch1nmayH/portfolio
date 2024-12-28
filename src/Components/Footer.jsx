@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
 
 const Footer = () => {
   return (
-    <div>Footer</div>
-  )
-}
+    <div className="mx-auto mt-[65px] w-[98%] 2xl:w-[60%] lg:w-[70%] md:w-[95%] mt-4 mb-[100px] h-[100px] border-none rounded-lg flex justify-center">
+    <div className="border-none rounded-lg flex justify-between flex-col w-[100%] text-grey bg-gray-50 h-[70%] text-2xl font-bold font-mono p-3 shadow-inner">
+      <p className="text-[19px] text-center font-medium font-Lexend p-3">
+        &copy; 2024 <span className="font-Mynerve text-[19px] text-center font-bold">Chinmay Hegde.</span> All rights reserved.
+      </p>
+    </div>
+    </div>
+  );
+};
 
-export default Footer
+export default Footer;

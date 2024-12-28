@@ -1,21 +1,20 @@
-import React from 'react'
-import Profile from './Components/Profile'
-import Footer from './Components/Footer'
-import Skills from './Components/Skills'
-import Projects from './Components/Projects'
-import Contact from './Components/Contact'
+import React from "react";
+import Profile from "./Components/Profile";
+import Footer from "./Components/Footer";
+import Skills from "./Components/Skills";
+import Projects from "./Components/Projects";
+import Contact from "./Components/Contact";
 
 const App = () => {
   return (
-    <div className='h-screen'>
-    <Profile/>
-    <Skills/>
-   <Projects/>
-     <Contact/>
-   {/* <Footer/> */}
-    </div>
-    
-  )
-}
+    <>
+      <Profile />
+      <Skills />
+      <Projects />
+      <Contact />
+      <Footer />
+    </>
+  );
+};
 
-export default App
+export default App;
