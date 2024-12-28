@@ -4,7 +4,7 @@ import profileImage from "../Assets/profile.jpg";
 const Profile = () => {
   return (
     <>
-      <div className="mx-auto mt-10 2xl:w-[70%] lg:w-[80%] md:w-[95%] sm:w-[98%] bg-white mt-4 border-none rounded-lg flex justify-between flex-col items-center text-grey text-2xl font-bold font-mono shadow-sm hover:shadow-2xl p-3 cursor-pointer">
+      <div className="mx-auto mt-10 2xl:w-[70%] lg:w-[80%] md:w-[95%] w-[98%] bg-white mt-4 border-none rounded-lg flex justify-between flex-col items-center text-grey text-2xl font-bold font-mono shadow-sm hover:shadow-2xl p-3 cursor-pointer">
         <div className="flex justify-between items-center w-full mt-5">
           <p className="ml-[2%] font-Mynerve">Chinmay Hegde</p>
           <div className="flex justify-between items-center mr-[2%]">
@@ -73,18 +73,18 @@ const Profile = () => {
             </a>
           </div>
         </div>
-        <div className="flex md:flex-row justify-between items-center w-full mt-5 ml-[2%] mt-[9%] mb-[3%] sm:flex-col sm:items-center sm:mt-5">
+        <div className="flex md:flex-row justify-between items-center w-full md:mt-5 ml-[2%] mt-[9%] mb-[3%] flex-col items-center mt-5">
           <img
             src={profileImage}
             alt="profile"
-            className="rounded-full h-96 w-96 md:max-w-[200px] md:max-h-[200px] sm:max-w-[150px] sm:max-h-[150px] sm:mt-[60px] shadow-2xl border-4 border-white"
+            className="rounded-full lg:h-96 lg:w-96 md:max-w-[200px] md:max-h-[200px] w-[150px] h-[150px] mt-[60px] shadow-2xl border-4 border-white"
           ></img>
           <div>
-            <p className="ml-10 mb-3 font-Lexend md:text-left sm:text-center sm:mt-[30px]">
+            <p className="ml-2 md:ml-10 mb-3 font-Lexend md:text-left text-center mt-[30px]">
               Full Stack Developer
             </p>
-            <div className="flex flex-col md:flex-row md:justify-between md:items-center md:w-[81%] sm:w-[90%] sm:items-center sm:justify-center">
-              <p className="text-grey-100 text-base lg:text-left md:text-left font-light ml-10 sm:text-center lg:word-wrap md:mr-[100px] sm:mr-[10px] font-Lexend-medium">
+            <div className="flex flex-col w-[90%] md:flex-row md:justify-between md:items-center md:w-[100%] lg:w-[80%] items-center justify-center">
+              <p className="text-grey-100 mr-[10px] text-base lg:text-left md:text-left font-light ml-10 text-center lg:word-wrap md:mr-[100px] font-Lexend-medium">
                 MCA graduate with experience in MERN Stack, PHP, and blockchain
                 technology. Skilled in building secure web applications and
                 blockchain projects. Strong leadership and problem-solving

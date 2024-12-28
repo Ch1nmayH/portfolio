@@ -24,8 +24,8 @@ const Projects = () => {
   }, []);
 
   return (
-    <div className="mx-auto mt-[65px] 2xl:w-[70%] lg:w-[80%] md:w-[95%] sm:w-[98%] bg-gray-50 mt-4 border-none rounded-lg flex justify-between flex-col  text-grey text-2xl font-bold font-mono shadow-sm hover:shadow-2xl p-3 cursor-pointer">
-      <h1 className="ml-[2%] md:text-left sm:text-center">
+    <div className="mx-auto mt-[65px] w-[98%] 2xl:w-[70%] lg:w-[80%] md:w-[95%] bg-gray-50 mt-4 border-none rounded-lg flex justify-between flex-col  text-grey text-2xl font-bold font-mono shadow-sm hover:shadow-2xl p-3 cursor-pointer">
+      <h1 className="ml-[2%] text-center md:text-left">
           Featured Projects
         </h1>
 

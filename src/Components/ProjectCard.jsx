@@ -19,7 +19,7 @@ const ProjectCard = (project) => {
     skills = ["HTML", "CSS", "Javascript", "PHP", "XAMPP", "MySQL"];
   }
   return (
-    <div className="bg-gray-100 lg:w-[48%] md:w-[48%] sm:w-[98%] m-2 rounded-lg p-2">
+    <div className="bg-white w-[98%] lg:w-[47%] md:w-[45%] m-2 rounded-lg p-2">
       <div className="flex justify-between">
         <span className="font-bold text-[20px] text-left p-3 ">
           {project.project.name}
@@ -51,7 +51,7 @@ const ProjectCard = (project) => {
       </div>
 
       {skills.map((skill) => (
-        <SubSkills skill={skill} />
+        <SubSkills skill={skill} color={"gray"} />
       ))}
     </div>
   );
