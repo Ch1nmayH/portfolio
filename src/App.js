@@ -7,10 +7,10 @@ import Contact from './Components/Contact'
 
 const App = () => {
   return (
-    <div>
+    <div className=''>
     <Profile/>
-    {/*<Skills/>
-    <Projects/>
+    <Skills/>
+    {/*<Projects/>
     <Contact/>
     <Footer/> */}
     </div>
