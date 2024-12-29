@@ -87,7 +87,7 @@ const Profile = () => {
               <TypeAnimationContent args1= {'Full Stack Developer'} args2 = {'MERN Stack Developer'}/>
             </p>
             <div className="flex flex-col w-[90%] md:flex-row md:justify-between md:items-center md:w-[95%] lg:w-[95%] items-center justify-center">
-              <p className="text-gray-600 mr-[10px] ml-[10px] md:mr-[40px] text-[15px] md:text-[19px] lg:text-left md:text-left md:ml-[40px] text-center lg:word-wrap">
+              <p className="text-gray-600 mr-[10px] ml-[43px] md:mr-[40px] text-[15px] md:text-[19px] lg:text-left md:text-left md:ml-[40px] text-center lg:word-wrap">
                 MCA graduate with experience in MERN Stack, PHP, and blockchain
                 technology. Skilled in building secure web applications and
                 blockchain projects. Strong leadership and problem-solving
