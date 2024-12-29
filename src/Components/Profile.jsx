@@ -82,12 +82,12 @@ const Profile = () => {
             className="rounded-full lg:h-96 lg:w-96 md:max-w-[200px] md:max-h-[200px] w-[150px] h-[150px] mt-[28px] shadow-2xl border-4 border-white"
           ></img>
           <div>
-            <p className="ml-2 md:ml-10 mb-3 font-Lexend md:text-left text-center mt-[30px] text-3xl text-gray-800">
+            <p className="ml-2 md:ml-10 mb-3 font-Lexend md:text-left text-center mt-[30px] text-2xl md:text-3xl text-gray-800">
               {/* Full Stack Developer */}
               <TypeAnimationContent args1= {'Full Stack Developer'} args2 = {'MERN Stack Developer'}/>
             </p>
-            <div className="flex flex-col w-[90%] md:flex-row md:justify-between md:items-center md:w-[100%] lg:w-[95%] items-center justify-center">
-              <p className="text-gray-600 mr-[10px] text-[19px] lg:text-left md:text-left ml-10 text-center lg:word-wrap md:mr-[100px]">
+            <div className="flex flex-col w-[90%] md:flex-row md:justify-between md:items-center md:w-[95%] lg:w-[95%] items-center justify-center">
+              <p className="text-gray-600 mr-[10px] ml-[10px] md:mr-[40px] text-[15px] md:text-[19px] lg:text-left md:text-left md:ml-[40px] text-center lg:word-wrap">
                 MCA graduate with experience in MERN Stack, PHP, and blockchain
                 technology. Skilled in building secure web applications and
                 blockchain projects. Strong leadership and problem-solving
