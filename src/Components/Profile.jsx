@@ -79,7 +79,7 @@ const Profile = () => {
           <img
             src={profileImage}
             alt="profile"
-            className="rounded-full lg:h-96 lg:w-96 md:max-w-[200px] md:max-h-[200px] w-[150px] h-[150px] mt-[60px] shadow-2xl border-4 border-white"
+            className="rounded-full lg:h-96 lg:w-96 md:max-w-[200px] md:max-h-[200px] w-[150px] h-[150px] mt-[28px] shadow-2xl border-4 border-white"
           ></img>
           <div>
             <p className="ml-2 md:ml-10 mb-3 font-Lexend md:text-left text-center mt-[30px] text-3xl text-gray-800">
