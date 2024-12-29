@@ -1,14 +1,16 @@
 import React from "react";
+import  TypeAnimationContent  from "./TypeAnimationContent";
 import profileImage from "../Assets/profile.jpg";
 
 const Profile = () => {
+
   return (
     <>
-      <div className="mx-auto mt-10 2xl:w-[60%] lg:w-[70%] md:w-[95%] w-[98%] bg-white mt-4 border-none rounded-lg flex justify-between flex-col items-center text-grey text-2xl font-bold font-mono shadow-sm hover:shadow-2xl p-3 cursor-pointer">
+      <div className="mx-auto mt-10 w-[93%] 2xl:w-[60%] text-xl lg:w-[70%] md:w-[95%] bg-white mt-4 border-none rounded-lg flex justify-between flex-col items-center text-grey md:text-2xl font-bold font-mono shadow-sm hover:shadow-2xl p-3 cursor-pointer">
         <div className="flex justify-between items-center w-full mt-5">
           <p className="ml-[2%] font-Mynerve">Chinmay Hegde</p>
           <div className="flex justify-between items-center mr-[2%]">
-            {/* <a
+            <a
               href="https://www.linkedin.com/in/chinmay-hegde-b89b27211/"
               target="_blank"
               rel="noopener noreferrer"
@@ -29,7 +31,7 @@ const Profile = () => {
                 <rect width="4" height="12" x="2" y="9"></rect>
                 <circle cx="4" cy="4" r="2"></circle>
               </svg>
-            </a> */}
+            </a>
             <a
               href="https://www.github.com/Ch1nmayH/"
               target="_blank"
@@ -81,7 +83,8 @@ const Profile = () => {
           ></img>
           <div>
             <p className="ml-2 md:ml-10 mb-3 font-Lexend md:text-left text-center mt-[30px] text-3xl text-gray-800">
-              Full Stack Developer
+              {/* Full Stack Developer */}
+              <TypeAnimationContent args1= {'Full Stack Developer'} args2 = {'MERN Stack Developer'}/>
             </p>
             <div className="flex flex-col w-[90%] md:flex-row md:justify-between md:items-center md:w-[100%] lg:w-[95%] items-center justify-center">
               <p className="text-gray-600 mr-[10px] text-[19px] lg:text-left md:text-left ml-10 text-center lg:word-wrap md:mr-[100px]">

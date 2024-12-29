@@ -1,4 +1,5 @@
 import React from "react";
+import TypeAnimationContent from "./TypeAnimationContent";
 
 const Contact = () => {
   // let randomRgB = () => {
@@ -9,9 +10,10 @@ const Contact = () => {
   // }
 
   return (
-    <div className="mx-auto w-[98%] lg:w-[70%] 2xl:w-[60%] m:w-[95%] mt-10 border-none rounded-lg text-gray shadow-sm hover:shadow-2xl p-3 cursor-pointer flex justify-between flex-col items-left">
+    <div className="mx-auto w-[93%] lg:w-[70%] 2xl:w-[60%] m:w-[95%] mt-10 border-none rounded-lg text-gray shadow-sm hover:shadow-2xl p-3 cursor-pointer flex justify-between flex-col items-left">
       <h1 className="mx-auto text-center font-Mynerve text-[50px] mt-4 mb-2">
-        Want to work with me ?
+        
+        <TypeAnimationContent args1={'Want to work with me ?'} args2={'So....'} />
       </h1>
       <p className="text-center p-2">
         Just Click on the button below and we can connect.
