@@ -1,21 +1,60 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import TypeAnimationContent from "./TypeAnimationContent";
 import profileImage from "../Assets/profile.jpg";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
+import RemoveRedEyeIcon from '@mui/icons-material/RemoveRedEye';
+import axios from "axios";
 
 const Profile = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const [visitors, setVisitors] = useState(0);
 
   const handleMenu = () => {
     setShowMenu(!showMenu);
   };
+
+  useEffect(() => {
+    const response = axios.get(
+      `${'http://localhost:7000/api'}/countVisitors`
+    );
+
+
+    if(!response) {
+      return;
+    }
+    response.then((response) => {
+      setVisitors(response.data);
+    }
+
+    );
+  }
+  , []);
+
+  useEffect(() => {
+    const fetchIp = async () => {
+        try {
+            // Fetch IP address from a third-party API
+            const response = await axios.get("https://api.ipify.org?format=json");
+            const ip = response.data.ip;
+            console.log("Current IP address:", ip);
+            const sendIp = await axios.post(`${'http://localhost:7000/api'}/addVisitor`, {
+                ip,
+            });
+        } catch (error) {
+            console.error("Error fetching IP address:", error);
+        }
+    };
+    fetchIp();
+}, []);
+
 
   return (
     <>
       <div
         className={`mx-auto mt-10 w-[93%] 2xl:w-[60%] text-xl lg:w-[70%] md:w-[95%] bg-white mt-4 border-none rounded-lg flex justify-between flex-col items-center text-grey md:text-2xl font-bold font-mono shadow-sm hover:shadow-2xl p-3 cursor-pointer transition duration-500 ease-in-out`}
       >
+        <p className="text-sm ml-[90%] sm:ml-[94%]"><RemoveRedEyeIcon fontSize="sm"/> {visitors}</p>
         <div className="flex justify-between items-center w-full mt-5">
           <p className="ml-[2%] font-Mynerve">Chinmay Hegde</p>
           <div className="hidden md:flex md:justify-between md:items-center md:mr-[2%]">

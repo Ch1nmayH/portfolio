@@ -31,8 +31,8 @@ const Projects = () => {
 
         <div className="flex flex-wrap mt-[30px] ml-[2%] mt-4 mb-4">
           
-          {projects.map((project) => (
-            <ProjectCard project={project} />
+          {projects.map((project, i) => (
+            <ProjectCard project={project} key={i} />
           ))}
         <ProjectCard project={extra} />
         </div>

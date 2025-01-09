@@ -11,8 +11,8 @@ const SkillCard = ({skill}) => {
       </span>{" "}
       {skill.title}
     </p>
-    {skill.skills.map((skill) => (
-        <SubSkills skill={skill} />
+    {skill.skills.map((skill, i) => (
+        <SubSkills skill={skill} key={i} />
     ))}
   </div>
   )

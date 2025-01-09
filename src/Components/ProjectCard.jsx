@@ -18,6 +18,24 @@ const ProjectCard = (project) => {
   } else if (project.project.name === "svg") {
     skills = ["HTML", "CSS", "Javascript", "PHP", "XAMPP", "MySQL"];
   }
+
+  else if (project.project.name === "stackoverflow-api" || "School-Management-System") {
+    skills = [
+      "NodeJS",
+      "MongoDB",
+      "ExpressJS",
+    ];
+  }
+
+  else if(project.project.name === "Restaurant-Table-Booking-System" || "Travel-Agency-Booking-System"){
+    skills = [
+      "ReactJS",
+      "NodeJS",
+      "MongoDB",
+      "ExpressJS",
+      "TailwindCSS",
+    ];
+  }
   return (
     <div className="bg-white w-[98%] lg:w-[47%] md:w-[45%] m-2 rounded-lg p-2 shadow-sm">
       <div className="flex justify-between">
@@ -50,8 +68,8 @@ const ProjectCard = (project) => {
         </p>
       </div>
 
-      {skills.map((skill) => (
-        <SubSkills skill={skill} color={"gray"} />
+      {skills.map((skill, i) => (
+        <SubSkills skill={skill} color={"gray"} key={i} />
       ))}
     </div>
   );

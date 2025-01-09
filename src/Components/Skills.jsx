@@ -44,8 +44,8 @@ const Skills = () => {
         </h1>
 
         <div className="flex flex-wrap mt-[30px] ml-[2%] mt-4 mb-4">
-          {skills.skills.map((skill) => (
-            <SkillCard skill={skill}  />
+          {skills.skills.map((skill, i) => (
+            <SkillCard skill={skill} key={i}  />
           ))}
           
           
