@@ -16,7 +16,7 @@ const Profile = () => {
 
   useEffect(() => {
     const response = axios.get(
-      `${'http://localhost:7000/api'}/countVisitors`
+      `${'api.portfolio.chinmayh.me/api'}/countVisitors`
     );
 
 
@@ -38,7 +38,7 @@ const Profile = () => {
             const response = await axios.get("https://api.ipify.org?format=json");
             const ip = response.data.ip;
             console.log("Current IP address:", ip);
-            const sendIp = await axios.post(`${'http://localhost:7000/api'}/addVisitor`, {
+            const sendIp = await axios.post(`${'api.portfolio.chinmayh.me/api'}/addVisitor`, {
                 ip,
             });
         } catch (error) {
